@@ -3,13 +3,15 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
+	public static CameraController active;
+
 	public GameObject target;
 
 	public float distance;
 
 	// Use this for initialization
 	void Start () {
-	
+		active = this;
 	}
 	
 	// Update is called once per frame
